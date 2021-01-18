@@ -56,7 +56,8 @@ rails s
 | POST  | Login, returns a token |
 | POST | Add image  |
 | GET  | Get all images |
+| GET  | Gets a preaigned url to upload image to s3 from the frontend |
 | GET  | Get image by id |
 | DELETE  | Delete image by id |
 
-* ...
+After starting the server, you can use Postman or curl to send these request. For this demo, I will show screenshots sample request and response in Postman.
