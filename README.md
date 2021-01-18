@@ -56,7 +56,7 @@ rails s
 | POST  | Login, returns a token |
 | POST | Add image  |
 | GET  | Get all images |
-| GET  | Gets a preaigned url to upload image to s3 from the frontend |
+| GET  | Gets a presigned url to upload image to s3 from the frontend |
 | GET  | Get image by id |
 | DELETE  | Delete image by id |
 
