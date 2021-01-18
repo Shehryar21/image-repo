@@ -17,6 +17,17 @@ The application only has the backend setup for now since the challenge did not r
 3. S3 Bucket
 4. React
 
-* Setting Up
+* Installation
+
+
+* Backend API's
+| Type | Purpose |
+| ------------- | ------------- |
+| POST | Registers New User  |
+| POST  | Login, returns a token |
+| POST | Add image  |
+| GET  | Get all images |
+| GET  | Get image by id |
+| DELETE  | Delete image by id |
 
 * ...
