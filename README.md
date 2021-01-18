@@ -21,6 +21,7 @@ The application only has the backend setup for now since the challenge did not r
 
 
 * Backend API's
+
 | Type | Purpose |
 | ------------- | ------------- |
 | POST | Registers New User  |
