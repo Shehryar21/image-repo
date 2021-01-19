@@ -10,6 +10,8 @@ The following is what the application is capable of doing:
 
 The application only has the backend setup for now since the challenge did not require a frontend component, but a barebones react Frontend is there and could be easily changed. I would have created a fancy frontend, but talking to Shopify representatives, a Frontend component for a the backend challenge was not needed, so I just focused on the backend.
 
+Since Shopify uses Ruby on Rails quite alot, I decided to make my project using Ruby on Rails as well. This was my first time using Ruby and I had a great time learning and building out the project.
+
 
 ### Technologies Used
 1. Ruby on Rails
@@ -62,3 +64,8 @@ rails s
 | DELETE  | Delete image by id | api/v1/images.json |
 
 After starting the server, you can use Postman or curl to send these request. For this demo, I will show screenshots sample request and response in Postman.
+
+### Demo
+
+
+
