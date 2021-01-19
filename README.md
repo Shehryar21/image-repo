@@ -50,14 +50,15 @@ rails s
 
 ### Backend API's
 
-| Type | Purpose |
-| ------------- | ------------- |
-| POST | Registers New User  |
-| POST  | Login, returns a token |
-| POST | Add image  |
-| GET  | Get all images |
-| GET  | Gets a presigned url to upload image to s3 from the frontend |
-| GET  | Get image by id |
-| DELETE  | Delete image by id |
+| Type | Purpose | Endpoint
+| ------------- | ------------- | ------------ |
+| POST | Registers New User  | /signup |
+| POST  | Login to the session | /login |
+| GET | Logout from the session | /logout |
+| POST | Add image  | /api/v1/images.json |
+| GET  | Get all images | api/v1/images.json |
+| GET  | Gets a presigned url to upload image to s3 from the frontend | /s3/direct_post |
+| GET  | Get image by id | api/v1/images.json/{id} |
+| DELETE  | Delete image by id | api/v1/images.json |
 
 After starting the server, you can use Postman or curl to send these request. For this demo, I will show screenshots sample request and response in Postman.
