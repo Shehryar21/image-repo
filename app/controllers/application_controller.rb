@@ -7,6 +7,7 @@ class ApplicationController < ActionController::Base
   helper_method :current_user
 
   def authorize
+    p current_user
     render json: { message: "Unauthorized" }, status: 404 unless current_user
   end
 end

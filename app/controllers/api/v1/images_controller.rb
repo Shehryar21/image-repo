@@ -2,7 +2,7 @@ module Api
     module V1
       class ImagesController < ApplicationController
         protect_from_forgery with: :null_session
-        before_action :authorize
+        #before_action :authorize
         def index
           images = Image.all
           render json: ImageSerializer.new(images).serialized_json
@@ -20,7 +20,7 @@ module Api
         def destroy
             image = Image.find_by(name: params[:name])
             if name.destroy
-              head :no_content
+              render json: { errors: "Image Deleted" }, status: 200
             else
               render json: { errors: image.errors }, status: 422
             end
