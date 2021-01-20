@@ -54,7 +54,7 @@ rails s
 
 | Type | Purpose | Endpoint
 | ------------- | ------------- | ------------ |
-| POST | Registers New User  | /signup |
+| POST | Registers New User  | /users |
 | POST  | Login to the session | /login |
 | GET | Logout from the session | /logout |
 | POST | Add image  | /api/v1/images.json |
@@ -69,5 +69,26 @@ After starting the server, you can use Postman or curl to send these request. Fo
 
 ![Alt text](/screenshots/signupsuccessful.png?raw=true "Signing Up")
 
-More screenshots for demo coming!!!
+If the password is too small or they don't match then the user would not be able to sign up
+
+![Alt text](/screenshots/signupfailed.png?raw=true "Signing Up")
+
+Now once a user is signed up, he has to login
+
+![Alt text](/screenshots/loginsuccessful.png?raw=true "Signing Up")
+
+If user provides wrong credentials, they cannot login
+
+![Alt text](/screenshots/loginfailed.png?raw=true "Signing Up")
+
+Now once hes logged in, he can get and post images
+
+Getting all images:
+
+![Alt text](/screenshots/gatallimages.png?raw=true "Signing Up")
+
+Post image:
+
+![Alt text](/screenshots/postimage.png?raw=true "Signing Up")
+
 
