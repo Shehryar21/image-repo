@@ -68,6 +68,8 @@ After starting the server, you can use Postman or curl to send these request. Fo
 
 ### Demo
 
+I have also exported a postman collection of all the APIs which is located at the root of the branch (Shopify Challenge API's.postman_collection)
+
 ## Signing Up (creating a new user)
 
 ![Alt text](/screenshots/signupsuccesful.png?raw=true "Signing Up")
