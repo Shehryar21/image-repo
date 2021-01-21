@@ -57,38 +57,70 @@ rails s
 | POST | Registers New User  | /users |
 | POST  | Login to the session | /login |
 | GET | Logout from the session | /logout |
-| POST | Add image  | /api/v1/images.json |
-| GET  | Get all images | api/v1/images.json |
+| POST | Add image  | /api/v1/images |
+| GET  | Get all images | api/v1/images |
+| GET  | Get image by id | api/v1/images/{id} |
+| PUT  | Edit image by id | api/v1/images/{id} |
+| DELETE  | Delete image by id | api/v1/images/{id} |
 | GET  | Gets a presigned url to upload image to s3 from the frontend | /s3/direct_post |
-| GET  | Get image by id | api/v1/images.json/{id} |
-| DELETE  | Delete image by id | api/v1/images.json |
 
 After starting the server, you can use Postman or curl to send these request. For this demo, I will show screenshots sample request and response in Postman.
 
 ### Demo
 
-![Alt text](/screenshots/signupsuccessful.png?raw=true "Signing Up")
+## Signing Up (creating a new user)
+
+![Alt text](/screenshots/signupsuccesful.png?raw=true "Signing Up")
 
 If the password is too small or they don't match then the user would not be able to sign up
 
 ![Alt text](/screenshots/signupfailed.png?raw=true "Signing Up")
 
+## Login
+
 Now once a user is signed up, he has to login
 
-![Alt text](/screenshots/loginsuccessful.png?raw=true "Signing Up")
+![Alt text](/screenshots/loginsuccessful.png?raw=true )
 
 If user provides wrong credentials, they cannot login
 
-![Alt text](/screenshots/loginfailed.png?raw=true "Signing Up")
+![Alt text](/screenshots/loginfailed.png?raw=true )
 
 Now once hes logged in, he can get and post images
 
+### Get Image
+
 Getting all images:
 
-![Alt text](/screenshots/gatallimages.png?raw=true "Signing Up")
+![Alt text](/screenshots/getallimages.png?raw=true )
+
+Get image by id
+
+![Alt text](/screenshots/getimagebyid.png?raw=true )
+
+If id is not valid or found, user would get the following
+
+![Alt text](/screenshots/errgetimagebyid.png?raw=true )
+
+## Post Image (create a new image)
 
 Post image:
 
-![Alt text](/screenshots/postimage.png?raw=true "Signing Up")
+![Alt text](/screenshots/postimage.png?raw=true )
 
+## Update image
+
+![Alt text](/screenshots/putimagebyid.png?raw=true )
+
+again, if id is not found or not valid, an error message is shown same as getimagebyid
+
+## Delete image
+
+![Alt text](/screenshots/deleteimagebyid.png?raw=true)
+
+### Logout
+
+![Alt text](/screenshots/logout.png?raw=true )
+
+Thank you. I hope you enjoyed the demo!!!!
 
