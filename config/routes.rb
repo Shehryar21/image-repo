@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   get '/login' => 'sessions#new'
   post '/login' => 'sessions#create'
   get '/logout' => 'sessions#destroy'
-
+  get 's3_presigned_url' => 's3#direct_post'
   get '/signup' => 'users#new'
   post '/users' => 'users#create'
   get 'pages/index'
