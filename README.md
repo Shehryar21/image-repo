@@ -120,9 +120,6 @@ again, if id is not found or not valid, an error message is shown same as getima
 
 ![Alt text](/screenshots/deleteimagebyid.png?raw=true)
 
-### Logout
-
-![Alt text](/screenshots/logout.png?raw=true )
 
 ### Getting Presigned URL from the backend so that image can be uploaded directly to s3 from the client side
 
