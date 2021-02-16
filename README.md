@@ -56,13 +56,12 @@ rails s
 | ------------- | ------------- | ------------ |
 | POST | Registers New User  | /users |
 | POST  | Login to the session | /login |
-| GET | Logout from the session | /logout |
 | POST | Add image  | /api/v1/images |
 | GET  | Get all images | api/v1/images |
 | GET  | Get image by id | api/v1/images/{id} |
 | PUT  | Edit image by id | api/v1/images/{id} |
 | DELETE  | Delete image by id | api/v1/images/{id} |
-| GET  | Gets a presigned url to upload image to s3 from the frontend | /s3/direct_post |
+| GET  | Gets a presigned url to upload image to s3 from the frontend | /s3_presigned_url |
 
 After starting the server, you can use Postman or curl to send these request. For this demo, I will show screenshots sample request and response in Postman.
 
@@ -120,9 +119,10 @@ again, if id is not found or not valid, an error message is shown same as getima
 
 ![Alt text](/screenshots/deleteimagebyid.png?raw=true)
 
-### Logout
 
-![Alt text](/screenshots/logout.png?raw=true )
+### Getting Presigned URL from the backend so that image can be uploaded directly to s3 from the client side
+
+![Alt text](/screenshots/s3presignedurl.png?raw=true )
 
 Thank you. I hope you enjoyed the demo!!!!
 
