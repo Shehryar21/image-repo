@@ -1,5 +1,5 @@
-class UsersController < ApplicationController
-
+class UsersController < ActionController::Base
+    protect_from_forgery with: :null_session
     def new
     end
 
@@ -7,7 +7,6 @@ class UsersController < ApplicationController
         user = User.new(user_params)
         if user.save
             session[:user_id] = user.id
-            
             render json: { message: "User successfully created" }, status: 200
         else
             render json: { error: user.errors.messages }, status: 422

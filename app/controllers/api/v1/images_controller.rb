@@ -2,8 +2,9 @@ module Api
     module V1
       class ImagesController < ApplicationController
         protect_from_forgery with: :null_session
-        #before_action :authorize
         def index
+          p current_user
+          p session[:user_id]
           images = Image.all
           render json: ImageSerializer.new(images).serialized_json
         end
