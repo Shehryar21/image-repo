@@ -56,7 +56,6 @@ rails s
 | ------------- | ------------- | ------------ |
 | POST | Registers New User  | /users |
 | POST  | Login to the session | /login |
-| GET | Logout from the session | /logout |
 | POST | Add image  | /api/v1/images |
 | GET  | Get all images | api/v1/images |
 | GET  | Get image by id | api/v1/images/{id} |
