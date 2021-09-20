@@ -1,4 +1,4 @@
-# Shehryar Suleman Fall 2021 - Shopify Developer Intern Challenge 
+# Shehryar Suleman Winter 2022 - Shopify Backend Developer Intern Challenge 
 
 The following is what the application is capable of doing:
 1. Add one or bulk images
